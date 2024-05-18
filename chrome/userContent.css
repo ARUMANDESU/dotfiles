@@ -1,0 +1,53 @@
+@-moz-document url-prefix(about:home),
+url-prefix(about:newtab) {
+    .click-target-container *,
+    .top-sites-list * {
+        color: #fff !important ;
+        text-shadow: 2px 2px 2px #000 !important ;
+    }
+
+    body {
+        background: url("/home/arumandesu/Pictures/currentWallpapres/anime-girls-balloon-women-sky-wallpaper-659852899b3ce30278d24f855a4395e8.jpg") !important ;
+        background-size: cover !important;
+        background-position: center !important;
+        background-size: cover !important ;
+    }
+
+    .search-handoff-button{
+        background-color: transparent !important;
+        backdrop-filter: blur(10px);
+    }
+
+    .top-site-outer .tile {
+        background-color: rgba(255, 255, 255, 0.1) !important ;
+        backdrop-filter: blur(10px);
+        transition: transform 0.25s ease-in-out !important ;
+    }
+
+    .top-site-outer {
+        background-color: rgba(0, 0, 0, 0) !important ;
+        transition: background-color 0.25s ease-in-out !important;
+    }
+
+    .top-site-outer:hover {
+        background-color: rgba(65, 65, 65, 0.33) !important ;
+    }
+
+    .top-site-outer:hover .tile {
+        transform: scale(1.1) !important ;
+    }
+
+    .top-site-icon {
+        background-color: rgba(0, 0, 0, 0) !important ;
+        width: 100% !important ;
+        height: 100% !important ;
+        background-size: cover !important ;
+    }
+}
+
+/* dark blank tab */
+@-moz-document url(about:blank), url(about:newtab) {
+    #newtab-window, html:not(#ublock0-epicker) {
+        background: #222 !important;
+    }
+}
