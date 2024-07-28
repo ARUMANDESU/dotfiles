@@ -70,7 +70,7 @@ ZSH_THEME="dst"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
+plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias gcommits="git log --oneline --graph --decorate --all"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -113,7 +113,13 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/GO
+export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH:$GOROOT:$GOBIN:$GOROOT/bin:$HOME/.local/bin
+export PATH=$PATH:$GOPATH:$GOROOT:$GOBIN:$GOROOT/bin:$HOME/.local/bin:$HOME/bin
 
+export GPG_TTY=$(tty)
+
+export PATH=$PATH:/home/arumandesu/.spicetify
+
+
+eval "$(zoxide init zsh)"

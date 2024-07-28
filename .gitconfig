@@ -1,0 +1,7 @@
+[user]
+	name = ARUMANDESU
+	email = zh.arumandes@gmail.com
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = main
