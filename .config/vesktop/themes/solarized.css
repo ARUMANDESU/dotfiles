@@ -1,0 +1,321 @@
+/* defining standard rules */
+
+:root {
+	--solarized-base05: #002b36;
+	--solarized-base04: #002f3b;
+        --solarized-base03: #013340;
+        --solarized-base02: #073642;
+	--solarized-base01: #586e75;
+	--solarized-base00: #657b83;
+	--solarized-base0: #839496;
+	--solarized-base1: #93a1a1;
+	--solarized-base2: #eee8d5;
+        --solarized-base3: #f3ebd7;
+	--solarized-base4: #f8f1de;
+        --solarized-base5: #fdf6e3;
+}
+
+.theme-dark {
+    --background-primary: url('https://imgur.com/XqKQQd4.jpg') !important;
+    --background-secondary: var(--solarized-base03);
+    --background-secondary-alt: var(--solarized-base04);
+    --background-tertiary: var(--solarized-base05);
+    --background-accent: var(--solarized-base00);
+    --background-floating: #001d24;
+    --background-mobile-primary: var(--solarized-base02);
+    --background-mobile-secondary: var(--solarized-base03);
+    --header-primary: var(--solarized-base1);
+    --header-secondary: var(--solarized-base1);
+    --text-normal: var(--solarized-base1);
+    --text-muted: var(--solarized-base01);
+    --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --interactive-normal: var(--solarized-base1);
+    --interactive-hover: var(--solarized-base2);
+    --interactive-active: var(--solarized-base2);
+    --interactive-muted: #4f545c;
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --info-positive-text: #fff;
+    --info-warning-text: #ffffff;
+    --info-danger-text: #fff;
+    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-text: #fff;
+    --status-warning-text: #000;
+    --scrollbar-thin-thumb: var(--solarized-base05);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--solarized-base05);
+    --scrollbar-auto-track: var(--solarized-base03);
+    --scrollbar-auto-scrollbar-color-thumb: #202225;
+    --scrollbar-auto-scrollbar-color-track: #2f3136;
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*57.9%),77.6%);
+    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+    --background-message-hover: rgba(4,4,5,0.07);
+    --channels-default: var(--solarized-base00);
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: var(--solarized-base04);
+    --activity-card-background: var(--solarized-base05);
+    --textbox-markdown-syntax: #8e9297;
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: var(--solarized-base02);
+    --deprecated-quickswitcher-input-background: var(--solarized-base02)
+    --deprecated-quickswitcher-input-placeholder: var(--solarized-base01);
+    --deprecated-text-input-bg: rgba(0,0,0,0.1);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+
+    --toast-background: var(--solarized-base02);
+    --toast-header: var(--solarized-base05);
+    --toast-contents: var(--solarized-base03);
+    --toast-box-shadow: rgba(0, 0, 0, .2);
+    --toast-border: var(--solarized-base05);
+}
+
+.theme-light {
+    --background-primary: var(--solarized-base5);
+    --background-secondary: var(--solarized-base4);
+    --background-secondary-alt: var(--solarized-base3);
+    --background-tertiary: var(--solarized-base2);
+    --background-accent: var(--solarized-base0);
+    --background-floating: var(--solarized-base5);
+    --background-mobile-primary: var(--solarized-base5);
+    --background-mobile-secondary: var(--solarized-base4);
+
+    --header-primary: var(--solarized-base01);
+    --header-secondary: var(--solarized-base01);
+    --text-normal: var(--solarized-base00);
+    --text-muted: var(--solarized-base01);
+    --text-link: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+    --text-link-low-saturation: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --interactive-normal: var(--solarized-base01);
+    --interactive-hover: var(--solarized-base02);
+    --interactive-active: var(--solarized-base02);
+    --interactive-muted: #c7ccd1;
+    --background-modifier-hover: rgba(116,127,141,0.08);
+    --background-modifier-active: rgba(116,127,141,0.16);
+    --background-modifier-selected: rgba(116,127,141,0.24);
+    --background-modifier-accent: rgba(6,6,7,0.08);
+    --info-positive-text: #000;
+    --info-warning-text: #000;
+    --info-danger-text: #000;
+    --info-help-background: hsla(212,calc(var(--saturation-factor, 1)*100%),43.9%,0.1);
+    --info-help-foreground: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+    --info-help-text: #000;
+    --status-warning-text: #fff;
+    --scrollbar-thin-thumb: #e2dbc6;;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #e2dbc6;;
+    --scrollbar-auto-track: var(--solarized-base3);
+    --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
+    --scrollbar-auto-scrollbar-color-track: #f2f3f5;
+    --elevation-stroke: 0 0 0 1px rgba(6,6,7,0.08);
+    --elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+    --logo-primary: hsl(227,calc(var(--saturation-factor, 1)*58.4%),65.1%);
+    --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*58.4%),65.1%);
+    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.2);
+    --background-message-hover: rgba(6,6,7,0.02);
+    --channels-default: #6a7480;
+    --guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+    --channeltextarea-background: var(--solarized-base3);
+    --activity-card-background: var(--solarized-base5);
+    --textbox-markdown-syntax: #6a7480;
+    --deprecated-card-bg: #f8f9f9;
+    --deprecated-card-editable-bg: rgba(246,246,247,0.6);
+    --deprecated-store-bg: var(--solarized-base5);
+    --deprecated-quickswitcher-input-background: var(--solarized-base5);
+    --deprecated-quickswitcher-input-placeholder: var(--solarized-base0);
+    --deprecated-text-input-bg: rgba(79,84,92,0.02);
+    --deprecated-text-input-border: rgba(79,84,92,0.3);
+    --deprecated-text-input-border-hover: #b9bbbe;
+    --deprecated-text-input-border-disabled: #dcddde;
+    --deprecated-text-input-prefix: #b9bbbe;
+
+    --toast-background: var(--solarized-base5);
+    --toast-header: var(--solarized-base2);
+    --toast-contents: var(--solarized-base3);
+    --toast-box-shadow: rgba(0, 0, 0, .2);
+    --toast-border: var(--solarized-base2);
+}
+
+/* color of the home button */
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+	background-color: #f6be11;
+}
+
+/* friends view background  */
+.theme-dark .container-1D34oG {
+    background-color: var(--background-primary);
+}
+
+.theme-light .container-1D34oG {
+    background-color: var(--background-primary);
+}
+
+/* discover page background */
+.theme-dark .pageWrapper-1PgVDX {
+    background-color: var(--background-primary);
+}
+
+/* "create a server" modal background  */
+.theme-light .container-1CE3eW {
+    background-color: var(--background-primary);
+}
+.theme-light .footer-2gL1pp {
+    background-color: var(--background-tertiary);
+}
+
+/* buttons  */
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV {
+    color: var(--text-normal);
+    background-color: var(--background-tertiary);
+}
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+    color: var(--solarized-base00);
+    background-color: var(--solarized-base03);
+}
+
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
+    color: var(--text-normal);
+    background-color: var(--background-tertiary);
+}
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+    color: var(--solarized-base2);
+    background-color: var(--solarized-base01);
+}
+
+/* autocomplete scroller  */
+.theme-dark .autocomplete-1vrmpx {
+    background-color: var(--background-primary);
+}
+.theme-dark .categoryHeader-O1zU94 {
+    background-color: var(--background-primary);
+}
+
+.theme-light .autocomplete-1vrmpx {
+    background-color: var(--background-primary);
+}
+.theme-light .categoryHeader-O1zU94 {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .selected-1Tbx07 {
+    background-color: var(--background-secondary-alt);
+}
+.theme-light .selected-1Tbx07 {
+    background-color: var(--background-secondary-alt);
+}
+
+/* upload modal */
+
+.theme-dark .uploadModal-2ifh8j {
+    background: var(--background-primary);
+}
+.theme-dark .footer-3mqk7D {
+    background-color: var(--background-tertiary);
+}
+
+.theme-light .uploadModal-2ifh8j {
+    background: var(--background-primary);
+}
+.theme-light .footer-3mqk7D {
+    background-color: var(--background-tertiary);
+}
+
+/* search result */
+.theme-dark .container-3ayLPN {
+    background-color: var(--background-primary);
+}
+.theme-dark .option-96V44q:after {
+    background: linear-gradient(90deg,transparent,var(--background-primary) 80%);
+}
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--background-tertiary);
+}
+.theme-dark .option-96V44q.selected-rZcOL-:after {
+    background: linear-gradient(90deg,transparent,var(--background-tertiary) 50%);
+}
+
+.theme-dark .focused-2bY0OD {
+    background-color: var(--background-tertiary);
+}
+
+.theme-light .container-3ayLPN {
+    background-color: var(--background-primary);
+}
+.theme-light .option-96V44q:after {
+    background: linear-gradient(90deg,transparent,var(--background-primary) 80%);
+}
+.theme-light .option-96V44q.selected-rZcOL- {
+    background-color: var(--background-tertiary);
+}
+.theme-light .option-96V44q.selected-rZcOL-:after {
+    background: linear-gradient(90deg,transparent,var(--background-tertiary) 50%);
+}
+
+.theme-light .focused-2bY0OD {
+    background-color: var(--background-tertiary);
+}
+
+/* status modal  */
+.theme-dark .root-1gCeng {
+    background-color: var(--background-floating);
+}
+
+.theme-light .root-1gCeng {
+    background-color: var(--background-floating);
+}
+
+/* disabled spotify button  */
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+    background-color: var(--background-tertiary);
+}
+
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+    background-color: var(--background-tertiary);
+}
+
+/* expression popout  */
+.theme-dark .container-3ISnnM {
+    background-color: var(--background-secondary);
+}
+
+.theme-light .container-3ISnnM {
+    background-color: var(--background-secondary);
+}
+
+/* inline code markers */
+.markup-2BOw-j code {
+    background: var(--background-tertiary);
+}
+
+/* other modal footers */
+.theme-dark .footer-2gL1pp {
+	background-color: var(--background-tertiary);
+}
+
+.theme-light .footer-2gL1pp {
+	background-color: var(--background-tertiary);
+}
