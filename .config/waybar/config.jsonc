@@ -137,7 +137,7 @@
 		"format": "{icon}",
 		"rotate": 0,
 		"icon-size": 18,
-		"icon-theme": "Tela-circle-dracula",
+		"icon-theme": "Tela-circle-green",
         "spacing": 0,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
@@ -196,8 +196,8 @@
         "rotate": 0,
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
         "min-length": 6
     },
 

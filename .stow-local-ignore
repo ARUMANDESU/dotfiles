@@ -20,3 +20,6 @@ _darcs
 ^/COPYING
 
 /firefox
+/scripts
+
+/setup.sh
