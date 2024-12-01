@@ -40,6 +40,9 @@ PKGS=(
     'syncthing'             # File synchronization program
     'obsidian'              # Note-taking and knowledge management app
     'telegram-desktop'      # Telegram Desktop
+
+    # --- Development Tools ---
+    'neovim'
 )
 
 for pkg in "${PKGS[@]}"; do

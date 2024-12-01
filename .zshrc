@@ -7,8 +7,8 @@ export MY_VOULT=$OBSIDIAN/MyVoult
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH:$GOROOT:$GOBIN:$GOROOT/bin:$HOME/.local/bin:$HOME/bin
-
+export PATH=$PATH:$GOPATH:$GOROOT:$GOBIN:$GOROOT/bin:$HOME/.local/bin:$HOME/bin:$HOME/.cargo/bin
+export PATH=$PATH:/usr/local/bin
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gnome-keyring/ssh"
 export GPG_AGENT_INFO="$XDG_RUNTIME_DIR/gnome-keyring/gpg"
 export GPG_TTY=$(tty)
@@ -40,11 +40,17 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias gcommits="git log --oneline --graph --decorate --all"
+alias ff='fastfetch'
+alias vim='nvim'
+# Golang specific aliases
+alias gmt='go mod tidy'
+alias gv='go vet ./...'
+
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
