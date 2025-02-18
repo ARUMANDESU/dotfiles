@@ -46,6 +46,12 @@ alias vim='nvim'
 alias gmt='go mod tidy'
 alias gv='go vet ./...'
 
+# Quick kubernetes cluster commands
+alias k='kubectl'
+alias kn='kubectl get nodes'
+alias kp='kubectl get pods'
+alias ka='kubectl get all'
+
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
@@ -54,3 +60,5 @@ source <(fzf --zsh)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(zoxide init --cmd cd zsh)"
